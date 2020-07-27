@@ -1,20 +1,54 @@
 // Colors
 
-$color-primary: #58e1c1;
-$color-text: #777;
-$color-secondary: #51ddfc;
-$color-error: #e4757a;
-$color-warn: #fd7856;
-$color-info: #927bc1;
-$color-success: #63cc82;
+$white: #fff;
+$grey: #777;
+$viking: #58e1c1;
+$malibu: #51ddfc;
+$sunglo: #e4757a;
+$coral: #fd7856;
+$mountain-majesty: #927bc1;
+$emerald: #63cc82;
+
+$color-primary: $viking;
+$color-text: $grey;
+$color-secondary: $malibu;
+
+$btn-colors: (
+  default: $malibu,
+  error: $sunglo,
+  warning: $coral,
+  info: $mountain-majesty,
+  success: $emerald,
+);
+
+$col-colors: (
+  col-1: $mountain-majesty,
+  col-2: $coral,
+  col-3: #deb2ee,
+  col-4: #7ee6fd,
+  col-5: #88d9a0,
+  col-6: #4da2bb,
+  col-7: #ec9fa3,
+  col-8: #fd9f85,
+  col-9: $sunglo,
+  col-10: $emerald,
+  col-11: $malibu,
+  col-12: #80e8d1,
+);
 
 // Media query breakpoint
 
 $break-wide: "(min-width: 768px)";
 
 // Font stacks
+
 $stack-sans-serif: sans-serif;
 $stack-lato: "Lato", $stack-sans-serif;
+
+// Font weights
+
+$font-weight--normal: 300;
+$font-weight--bold: 700;
 
 // Border radius
 

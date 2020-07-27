@@ -27,19 +27,19 @@ a {
   }
 
   &-secondary {
-    font-weight: 300;
+    font-weight: $font-weight--normal;
     color: $color-text;
   }
 }
 
 .link {
   color: $color-secondary;
-  font-weight: 700;
+  font-weight: $font-weight--bold;
 }
 
 .blockquote {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: $font-weight--normal;
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;

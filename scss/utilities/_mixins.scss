@@ -9,6 +9,8 @@
   overflow: hidden;
 }
 
+// Centered layout
+
 @mixin centered-layout($margin-top: null, $max-width: null) {
   display: block;
   margin-left: auto;
@@ -17,6 +19,28 @@
   max-width: $max-width;
 }
 
-@mixin flex($disp: flex) {
-  display: $disp;
+// Button colors
+
+@each $theme, $color in $btn-colors {
+  .#{$theme} {
+    background-color: $color;
+  }
+}
+
+// Column colors
+
+@each $theme, $color in $col-colors {
+  .theme.#{$theme} {
+    background-color: $color;
+  }
+}
+
+// Column flex basis
+
+@mixin col-flex-basis {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex-basis: 8.33% * $i;
+    }
+  }
 }
