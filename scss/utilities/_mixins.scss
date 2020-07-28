@@ -19,28 +19,46 @@
   max-width: $max-width;
 }
 
-// Button colors
+// Column flex basis
 
-@each $theme, $color in $btn-colors {
-  .#{$theme} {
-    background-color: $color;
+@mixin col-flex-basis {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      flex-basis: 8.33% * $i;
+    }
   }
 }
 
 // Column colors
 
-@each $theme, $color in $col-colors {
-  .theme.#{$theme} {
-    background-color: $color;
+@mixin col-theme {
+  @each $theme, $color in $col-colors {
+    &.#{$theme} {
+      background-color: $color;
+    }
   }
 }
 
-// Column flex basis
+// Media query
 
-@mixin col-flex-basis {
-  @for $i from 1 through 12 {
-    .col-#{$i} {
-      flex-basis: 8.33% * $i;
+@mixin mq($break) {
+  @media (min-width: $break) {
+    @content;
+  }
+}
+
+// Button colors
+
+@mixin btn-theme {
+  @each $theme, $color in $btn-colors {
+    &-#{$theme} {
+      background-color: $color;
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
     }
   }
+}
+
+@mixin flex-layout {
 }

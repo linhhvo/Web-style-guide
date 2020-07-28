@@ -5,8 +5,14 @@
 .container {
   padding: 0 10px;
 
-  @media #{$break-wide} {
+  @include mq($break-wide) {
     @include centered-layout($max-width: 1400px);
+  }
+}
+
+.centered {
+  @include mq($break-wide) {
+    @include centered-layout;
   }
 }
 
@@ -15,19 +21,36 @@
   flex-direction: column;
   padding: 1em 10px;
 
-  @media #{$break-wide} {
+  @include mq($break-wide) {
     flex-direction: row;
   }
 }
 
-[class^="col"] {
+.col {
   margin-top: 10px;
   flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
   border-radius: $br;
+
+  @include mq($break-wide) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+
+    & + & {
+      margin-left: 10px;
+    }
+
+    @include col-flex-basis;
+  }
 }
 
 .card {
   flex-basis: 100%;
+}
+
+.theme {
+  @include col-theme;
 }

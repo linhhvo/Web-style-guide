@@ -10,31 +10,15 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: $br;
+  transition: background-color 0.3s ease-in-out;
 
-  @media #{$break-wide} {
+  @include btn-theme;
+
+  @include mq($break-wide) {
     padding: 10px 30px;
+
+    & + & {
+      margin-left: 10px;
+    }
   }
-  // &:hover {
-  //   background-color: lighten(15%);
-  // }
 }
-
-// .default {
-//   background-color: $color-secondary;
-// }
-
-// .error {
-//   background-color: $color-error;
-// }
-
-// .info {
-//   background-color: $color-info;
-// }
-
-// .success {
-//   background-color: $color-success;
-// }
-
-// .warning {
-//   background-color: $color-warn;
-// }

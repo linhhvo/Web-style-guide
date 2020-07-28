@@ -17,7 +17,7 @@
   &-logo {
     @include centered-layout;
 
-    @media #{$break-wide} {
+    @include mq($break-wide) {
       margin-left: initial;
       margin-right: initial;
     }

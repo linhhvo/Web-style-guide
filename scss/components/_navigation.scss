@@ -22,7 +22,7 @@
     }
   }
 
-  @media #{$break-wide} {
+  @include mq($break-wide) {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
