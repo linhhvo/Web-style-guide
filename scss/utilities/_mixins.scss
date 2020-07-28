@@ -34,17 +34,9 @@
 
 @mixin col-theme {
   @each $theme, $color in $col-colors {
-    &.#{$theme} {
+    &-#{$theme}.theme {
       background-color: $color;
     }
-  }
-}
-
-// Media query
-
-@mixin mq($break) {
-  @media (min-width: $break) {
-    @content;
   }
 }
 
@@ -65,4 +57,12 @@
   display: $disp;
   flex-direction: $dir;
   flex-basis: $basis;
+}
+
+// Media query
+
+@mixin mq($break) {
+  @media (min-width: $break) {
+    @content;
+  }
 }

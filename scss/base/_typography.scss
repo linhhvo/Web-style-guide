@@ -22,13 +22,11 @@ a {
 
 .headline {
   &-primary {
-    color: $color-primary;
-    margin-left: 10px;
+    @extend %hdln-prim;
   }
 
   &-secondary {
-    font-weight: $font-weight--normal;
-    color: $color-text;
+    @extend %hdln-sec;
   }
 }
 

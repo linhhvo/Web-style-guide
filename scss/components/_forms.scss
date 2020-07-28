@@ -4,15 +4,19 @@
 
 .form {
   @include flex-layout(null, null);
-}
 
-.input {
-  @include centered-layout($margin-top: 10px, $w: 94%);
-  border: none;
-  padding: 10px;
-  border-bottom: 5px solid $color-primary;
-}
+  &__legend {
+    @extend %hdln-sec;
+  }
 
-label {
-  @include hidden;
+  &__input {
+    @include centered-layout($margin-top: 10px, $w: 94%);
+    border: none;
+    padding: 10px;
+    border-bottom: 5px solid $color-primary;
+  }
+
+  &__label {
+    @include hidden;
+  }
 }

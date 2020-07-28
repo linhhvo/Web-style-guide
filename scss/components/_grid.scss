@@ -26,11 +26,15 @@
 }
 
 .col {
-  margin-top: 10px;
-  @include flex-layout(null, null);
-  min-height: 25px;
-  padding: 10px;
-  border-radius: $br;
+  @include col-theme;
+
+  @include mq($break-wide) {
+    @include col-flex-basis;
+  }
+}
+
+[class^="col"] {
+  @extend %col;
 
   @include mq($break-wide) {
     display: flex;
@@ -41,15 +45,9 @@
     & + & {
       margin-left: 10px;
     }
-
-    @include col-flex-basis;
   }
 }
 
 .card {
   @include flex-layout(null, null);
-}
-
-.theme {
-  @include col-theme;
 }

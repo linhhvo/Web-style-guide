@@ -3,20 +3,13 @@
 /* ============================================= */
 
 .btn {
-  margin-top: 15px;
-  width: 100%;
-  color: $white;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: $br;
-  transition: background-color 0.3s ease-in-out;
-
   @include btn-theme;
+}
+
+[class^="btn"] {
+  @extend %btn;
 
   @include mq($break-wide) {
-    padding: 10px 30px;
-
     & + & {
       margin-left: 10px;
     }
