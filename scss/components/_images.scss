@@ -2,24 +2,25 @@
 /*              Images                           */
 /* ============================================= */
 
+[class^="img"] {
+  @include centered-layout;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
 .img {
   &-avatar {
-    @include centered-layout($margin-top: 10px, $max-width: 100%);
     max-height: 100%;
   }
 
   &-frame {
-    @include centered-layout($margin-top: 10px, $max-width: 100%);
     padding: 13px;
-    border: 1px solid #ccc;
+    border: 1px solid $color-img-brdr;
   }
 
   &-logo {
-    @include centered-layout;
-
     @include mq($break-wide) {
-      margin-left: initial;
-      margin-right: initial;
+      margin: 0;
     }
   }
 }

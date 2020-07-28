@@ -3,8 +3,9 @@
 /* ============================================= */
 
 .nav {
+  @extend %flex;
   padding-left: 0;
-  @include flex-layout;
+  flex-basis: $full-flex;
 
   &-link {
     text-align: center;

@@ -2,6 +2,7 @@
 
 $white: #fff;
 $grey: #777;
+$silver: #ccc;
 $viking: #58e1c1;
 $malibu: #51ddfc;
 $sunglo: #e4757a;
@@ -12,6 +13,7 @@ $emerald: #63cc82;
 $color-primary: $viking;
 $color-text: $grey;
 $color-secondary: $malibu;
+$color-img-brdr: $silver;
 
 $btn-colors: (
   default: $malibu,
@@ -53,3 +55,6 @@ $font-weight--bold: 700;
 // Border radius
 
 $br: 5px;
+
+// Flex basis
+$full-flex: 100%;

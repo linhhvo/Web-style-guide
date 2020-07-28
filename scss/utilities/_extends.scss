@@ -20,17 +20,25 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: $br;
-  transition: background-color 0.3s ease-in-out;
-
-  @include mq($break-wide) {
-    padding: 10px 30px;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.85;
   }
 }
 
+// Columns
+
 %col {
   margin-top: 10px;
-  @include flex-layout(null, null);
+  flex-basis: $full-flex;
   min-height: 25px;
   padding: 10px;
   border-radius: $br;
+}
+
+// Flex layout
+
+%flex {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,3 +1,11 @@
+// Media query
+
+@mixin mq($break) {
+  @media (min-width: $break) {
+    @content;
+  }
+}
+
 // Form input labels
 
 @mixin hidden {
@@ -11,21 +19,18 @@
 
 // Centered layout
 
-@mixin centered-layout($margin-top: null, $max-width: null, $w: null) {
+@mixin centered-layout() {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: $margin-top;
-  max-width: $max-width;
-  width: $w;
 }
 
 // Column flex basis
 
-@mixin col-flex-basis {
-  @for $i from 1 through 12 {
+@mixin col-flex-basis($col-count) {
+  @for $i from 1 through $col-count {
     &-#{$i} {
-      flex-basis: 8.33% * $i;
+      flex-basis: ($full-flex / $col-count) * $i;
     }
   }
 }
@@ -46,23 +51,17 @@
   @each $theme, $color in $btn-colors {
     &-#{$theme} {
       background-color: $color;
-      &:hover {
-        background-color: lighten($color, 15%);
-      }
+      // &:hover {
+      //   background-color: lighten($color, 15%);
+      // }
     }
   }
 }
 
-@mixin flex-layout($disp: flex, $dir: column, $basis: 100%) {
-  display: $disp;
-  flex-direction: $dir;
-  flex-basis: $basis;
-}
+// Sibling margins
 
-// Media query
-
-@mixin mq($break) {
-  @media (min-width: $break) {
-    @content;
+@mixin doubly($margin: 10px) {
+  & + & {
+    margin-left: $margin;
   }
 }

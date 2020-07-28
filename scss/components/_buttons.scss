@@ -10,8 +10,8 @@
   @extend %btn;
 
   @include mq($break-wide) {
-    & + & {
-      margin-left: 10px;
-    }
+    padding: 10px 30px;
+
+    @include doubly;
   }
 }

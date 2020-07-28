@@ -6,7 +6,8 @@
   padding: 0 10px;
 
   @include mq($break-wide) {
-    @include centered-layout($max-width: 1400px);
+    @include centered-layout;
+    max-width: 1400px;
   }
 }
 
@@ -17,7 +18,7 @@
 }
 
 .row {
-  @include flex-layout($basis: null);
+  @extend %flex;
   padding: 1em 10px;
 
   @include mq($break-wide) {
@@ -29,7 +30,7 @@
   @include col-theme;
 
   @include mq($break-wide) {
-    @include col-flex-basis;
+    @include col-flex-basis(12);
   }
 }
 
@@ -42,12 +43,10 @@
     margin-top: 0;
     align-items: center;
 
-    & + & {
-      margin-left: 10px;
-    }
+    @include doubly;
   }
 }
 
 .card {
-  @include flex-layout(null, null);
+  flex-basis: $full-flex;
 }
