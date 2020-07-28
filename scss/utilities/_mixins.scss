@@ -11,12 +11,13 @@
 
 // Centered layout
 
-@mixin centered-layout($margin-top: null, $max-width: null) {
+@mixin centered-layout($margin-top: null, $max-width: null, $w: null) {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: $margin-top;
   max-width: $max-width;
+  width: $w;
 }
 
 // Column flex basis
@@ -60,5 +61,8 @@
   }
 }
 
-@mixin flex-layout {
+@mixin flex-layout($disp: flex, $dir: column, $basis: 100%) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-basis: $basis;
 }

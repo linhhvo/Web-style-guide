@@ -395,34 +395,34 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out; }
-  /* line 54, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+  /* line 55, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
   .btn-default {
     background-color: #51ddfc; }
-    /* line 56, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+    /* line 57, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
     .btn-default:hover {
       background-color: #9cecfd; }
-  /* line 54, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+  /* line 55, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
   .btn-error {
     background-color: #e4757a; }
-    /* line 56, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+    /* line 57, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
     .btn-error:hover {
       background-color: #f1b5b8; }
-  /* line 54, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+  /* line 55, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
   .btn-warning {
     background-color: #fd7856; }
-    /* line 56, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+    /* line 57, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
     .btn-warning:hover {
       background-color: #feb4a2; }
-  /* line 54, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+  /* line 55, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
   .btn-info {
     background-color: #927bc1; }
-    /* line 56, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+    /* line 57, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
     .btn-info:hover {
       background-color: #bdafd9; }
-  /* line 54, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+  /* line 55, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
   .btn-success {
     background-color: #63cc82; }
-    /* line 56, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+    /* line 57, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
     .btn-success:hover {
       background-color: #9ddfb0; }
   @media (min-width: 768px) {
@@ -443,13 +443,15 @@ a {
 /* line 9, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_forms.scss */
 .input {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
   width: 94%;
-  margin: 10px auto 0;
   border: none;
   padding: 10px;
   border-bottom: 5px solid #58e1c1; }
 
-/* line 18, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_forms.scss */
+/* line 16, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_forms.scss */
 label {
   position: absolute;
   left: -10000px;
@@ -464,10 +466,10 @@ label {
 /* line 5, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
 .nav {
   padding-left: 0;
-  flex-basis: 100%;
   display: flex;
-  flex-direction: column; }
-  /* line 11, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
+  flex-direction: column;
+  flex-basis: 100%; }
+  /* line 9, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
   .nav-link {
     text-align: center;
     border-radius: 5px;
@@ -475,7 +477,7 @@ label {
     display: block;
     width: 100%;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; }
-    /* line 19, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
+    /* line 17, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
     .nav-link:hover {
       color: #fff;
       background-color: #58e1c1; }
@@ -485,7 +487,7 @@ label {
       flex-direction: row;
       justify-content: flex-end;
       align-items: center; }
-      /* line 30, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
+      /* line 28, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_navigation.scss */
       .nav-link {
         flex-basis: 100px; } }
 
@@ -553,7 +555,7 @@ label {
     .row {
       flex-direction: row; } }
 
-/* line 29, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
+/* line 28, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
 .col {
   margin-top: 10px;
   flex-basis: 100%;
@@ -561,101 +563,101 @@ label {
   padding: 10px;
   border-radius: 5px; }
   @media (min-width: 768px) {
-    /* line 29, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
+    /* line 28, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
     .col {
       display: flex;
       justify-content: center;
       margin-top: 0;
       align-items: center; }
-      /* line 42, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
+      /* line 41, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
       .col + .col {
         margin-left: 10px; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-1 {
         flex-basis: 8.33%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-2 {
         flex-basis: 16.66%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-3 {
         flex-basis: 24.99%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-4 {
         flex-basis: 33.32%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-5 {
         flex-basis: 41.65%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-6 {
         flex-basis: 49.98%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-7 {
         flex-basis: 58.31%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-8 {
         flex-basis: 66.64%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-9 {
         flex-basis: 74.97%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-10 {
         flex-basis: 83.3%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-11 {
         flex-basis: 91.63%; }
-      /* line 26, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+      /* line 27, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
       .col-12 {
         flex-basis: 99.96%; } }
 
-/* line 50, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
+/* line 49, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/components/_grid.scss */
 .card {
   flex-basis: 100%; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-1 {
   background-color: #927bc1; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-2 {
   background-color: #fd7856; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-3 {
   background-color: #deb2ee; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-4 {
   background-color: #7ee6fd; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-5 {
   background-color: #88d9a0; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-6 {
   background-color: #4da2bb; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-7 {
   background-color: #ec9fa3; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-8 {
   background-color: #fd9f85; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-9 {
   background-color: #e4757a; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-10 {
   background-color: #63cc82; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-11 {
   background-color: #51ddfc; }
 
-/* line 36, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
+/* line 37, ../Users/linhv/Documents/GitHub/techdegree-project-4/scss/utilities/_mixins.scss */
 .theme.col-12 {
   background-color: #80e8d1; }
 

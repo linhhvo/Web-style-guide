@@ -17,8 +17,7 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include flex-layout($basis: null);
   padding: 1em 10px;
 
   @include mq($break-wide) {
@@ -28,7 +27,7 @@
 
 .col {
   margin-top: 10px;
-  flex-basis: 100%;
+  @include flex-layout(null, null);
   min-height: 25px;
   padding: 10px;
   border-radius: $br;
@@ -48,7 +47,7 @@
 }
 
 .card {
-  flex-basis: 100%;
+  @include flex-layout(null, null);
 }
 
 .theme {
