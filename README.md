@@ -1,2 +1,2 @@
-# techdegree-project-4
- web style guide
+# Web style guide
+Utilize SASS to make a web style guide
